@@ -1,40 +1,119 @@
+body {
+  background-color: rgb(252, 225, 102);
+  color: green;
+}
+
 img {
   width: 20px;
 }
 
-
+.mobil {
+  display: none;
+}
 .berries {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 80px 200px 80px;
-    justify-content: center;
-    column-gap: 50px;
-    row-gap: 10px;
-    grid-template-rows: 220px 430px;
+.egg {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+  .i1, .i2, .i3, .i4, .i5, .i6 {
+    border: 2px solid greenyellow;
+    border-radius: 50px;
+    padding: 8px;
+    background-color: greenyellow;
   }
 
-  .i6 {
-    align-self: self-end;
+  @media (max-width: 425px) {
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column-reverse;
+      align-items: center;
+
+
+    }
+
+    .i2 {
+      order: 2;
+      width: 75%;
+    }
+
+    .i5 {
+      order: 1;
+      width: 50%;
+    }
+    
+    .i1, .i3, .i4, .i6 {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .berries {
+      display: none;
+    }
+
+    .egg {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+    }
+
+    .mobil {
+      display: flex;
+    }
+
+    .data {
+      display: none;
+    }
+
+    
+
   }
 
-  .i5 {
-    align-self: self-start;
-  }
-
-  .i4 {
-    align-self: self-end;
+  @media (min-width: 426px) {
+    .container {
+      display: grid;
+      grid-template-columns: 80px 200px 80px;
+      justify-content: center;
+      column-gap: 10px;
+      row-gap: 5px;
+      grid-template-rows: 220px 430px;
+    }
+    .i6 {
+      align-self: self-end;
+    }
+  
+    .i5 {
+      align-self: self-start;
+    }
+  
+    .i4 {
+      align-self: self-end;
+    }
+    
+    .i3 {
+      align-self: self-end;
+    }
+  
+    .i2 {
+      align-self: self-start;
+    } 
+  
+    .i1 {
+      align-self: self-end;
+      border: 2px solid greenyellow;
+      border-radius: 50px;
+    } 
   }
   
-  .i3 {
-    align-self: self-end;
-  }
-
-  .i1 {
-    align-self: self-end;
-    border: 2px solid rgb(0, 0, 0);
-  }
