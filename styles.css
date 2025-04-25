@@ -1,9 +1,21 @@
+img {
+  width: 20px;
+}
+
+
+.berries {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
 .container {
     display: grid;
     grid-template-columns: 80px 200px 80px;
     justify-content: center;
-    column-gap: 30px;
+    column-gap: 50px;
     row-gap: 10px;
+    grid-template-rows: 220px 430px;
   }
 
   .i6 {
