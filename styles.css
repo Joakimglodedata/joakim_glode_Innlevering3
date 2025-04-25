@@ -4,7 +4,8 @@ body {
 }
 
 img {
-  width: 20px;
+  min-width: 70px;
+  max-width: 10%;
 }
 
 .mobil {
